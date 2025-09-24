@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <getopt.h>
+#include <stdlib.h>
 
 #define FLAGS "hvf:"
 
@@ -63,4 +64,6 @@ int main(int argc, char *argv[]) {
         printf("|\n");
         offset += 0x10;
     }
+    fclose(file);
+    free(filename);
 }
