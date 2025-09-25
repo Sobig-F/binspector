@@ -65,5 +65,4 @@ int main(int argc, char *argv[]) {
         offset += 0x10;
     }
     fclose(file);
-    free(filename);
 }
